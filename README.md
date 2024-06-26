@@ -1,7 +1,7 @@
 # Django Web
 
 ### Открытые уроки:
-- [Название](open-lessons/path.date/)
+- [Знакомство с библиотекой FastAPI-JSON:API. Занятие от 03.06.2024](open-lessons/fastapi-jsonapi-intro-03.06/)
 
 
 ### Курсы Django Web:
