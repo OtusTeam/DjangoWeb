@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  {% firstof title 'All tasks' %}
+{% endblock %}
+
+{% block body %}
+
+  <h1>Tasks:</h1>
+  {% if task_list %}
+    <ul>
+      {% for task in task_list %}
+        <li><a href="{% url 'tasks:detail' pk=task.pk %}">{{ task }}</a></li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <h2>No tasks yet. Create a new one.</h2>
+  {% endif %}
+  
+  <div>
+    <a href="{% url 'tasks:create' %}">Create task</a>
+  </div>
+  <div><a href="{% url 'tasks:index' %}">Back to Tasks index</a></div>
+
+{% endblock %}

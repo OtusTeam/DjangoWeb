@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Tasks Index
+{% endblock %}
+
+{% block body %}
+  <h1>Hello Tasks Index!!!</h1>
+
+  <div>
+    <p><strong>Answer:</strong> {{ answer }}</p>
+    <p><strong>Number:</strong> {{ number }}</p>
+  </div>
+
+  <ul>
+    <li><a href="{% url 'tasks:all' %}">All tasks</a></li>
+    <li><a href="{% url 'tasks:done' %}">Done tasks</a></li>
+  </ul>
+
+  <br>
+  <div><a href="{% url 'index' %}">Back to index</a></div>
+
+{% endblock %}
