@@ -1,5 +1,5 @@
-# Django Web YYYY-MM
+# Django Web 2024.06
 
 ### Занятия
 
-- [Урок название](lessons/lesson.number/)
+- [Знакомство с библиотеками requests и BeautifulSoup // ДЗ](lessons/lesson.01/)
