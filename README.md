@@ -6,4 +6,4 @@
 
 ### Курсы Django Web:
 
-- [DjangoWeb.YYYY-MM](https://github.com/OtusTeam/DjangoWeb/tree/DjangoWeb.YYYY-MM)
+- [DjangoWeb.2024-06](https://github.com/OtusTeam/DjangoWeb/tree/DjangoWeb.2024-06)
