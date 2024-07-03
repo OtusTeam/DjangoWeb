@@ -2,4 +2,4 @@
 
 ### Занятия
 
-- [Знакомство с библиотеками requests и BeautifulSoup // ДЗ](lessons/lesson.01/)
+- [Урок 1. Знакомство с библиотеками requests и BeautifulSoup](lessons/lesson.01/)
