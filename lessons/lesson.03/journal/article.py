@@ -1,3 +1,6 @@
+from datetime import date
+
+
 class Article:
 
     def __init__(self, text, author, publish_date):
@@ -29,3 +32,18 @@ class Article:
         print(separator*100)
         print(self.publish_date, self.author)
         print(separator * 100)
+
+    def __lt__(self, other):
+        return len(self.text) < len(other.text)
+
+    @classmethod
+    def create_article(cls, text, author):
+        return cls(
+            text,
+            author,
+            date.today(),
+        )
+
+
+class NewsArticle(Article):
+    pass
