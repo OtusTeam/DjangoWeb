@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Page title!</title>
+
+  <link
+      href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+  >
+
+</head>
+<body>
+<div class="container my-3">
+  <h1>Hello World!</h1>
+  <h2 class="green-text">Hello World!!</h2>
+  <h3>Hello World!!!</h3>
+
+  <div>
+
+
+    What is Lorem Ipsum?
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+    type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+    remaining
+    essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+    passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  </div>
+
+  <hr>
+
+  <p>Outer paragraph</p>
+  <div>
+
+    <p>Inner paragraph</p>
+    <p class="green-text">Green text inner paragraph</p>
+
+    Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного
+    текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При
+    создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным
+    образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для
+    визуально-слухового восприятия.
+
+    По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей
+    недоумение
+    при попытках прочитать рыбу текст. В отличие от lorem ipsum, текст рыба на русском языке наполнит любой макет
+    непонятным смыслом и придаст неповторимый колорит советских времен.
+  </div>
+
+  <!-- hello world! -->
+
+  <hr>
+
+  <div class="row">
+    <div class="col">
+      <button
+          id="click-button"
+          type="button"
+          class="btn btn-lg btn-dark"
+      >
+        Clicked times:<span
+          id="click-count"
+          class="badge text-bg-success ms-3">4</span>
+      </button>
+    </div>
+  </div>
+  <hr>
+
+  <div class="row">
+    <div class="col col-sm-12 col-md-8">
+
+      <ul class="list-group">
+        <li class="list-group-item">An item</li>
+        <li class="list-group-item">A second item</li>
+        <li class="list-group-item">A third item</li>
+        <li class="list-group-item">A fourth item</li>
+        <li class="list-group-item">And a fifth one</li>
+      </ul>
+    </div>
+    <div class="col col-sm-12 col-md-4 mt-sm-3 mt-md-0">
+
+      <div class="card">
+        <img
+            src="https://banner2.cleanpng.com/20180702/htl/kisspng-smartphone-logo-font-cel-5b3a0b5d845481.929506251530530653542.jpg"
+            class="card-img-top" alt="smartphone">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <span
+              data-bs-toggle="tooltip"
+              data-bs-placement="left"
+              data-bs-title="This top tooltip is themed via CSS variables."
+          >
+          <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="popover"
+              data-bs-title="Popover title"
+              data-bs-placement="right"
+              data-bs-content="And here's some amazing content. It's very engaging. Right?"
+          >
+            Button with tooltip (on wrapping span) and popover
+          </button>
+          </span>
+
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+</div>
+
+<script
+    src="https://unpkg.com/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+
+
+<script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+</script>
+
+<script>
+  const clickButton = document.getElementById('click-button');
+  const clickCountBadge = document.getElementById('click-count');
+  let clickCount = 0;
+
+  function updateCountBadge() {
+      clickCountBadge.innerText = clickCount.toString();
+  }
+  function handleClick() {
+      clickCount += 1;
+      updateCountBadge();
+  }
+
+  clickButton.addEventListener('click', handleClick);
+  updateCountBadge();
+
+</script>
+
+</body>
+</html>
