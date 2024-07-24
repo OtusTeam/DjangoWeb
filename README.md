@@ -9,3 +9,4 @@
 - [Урок 5. Знакомство с ORM, SQLAlchemy](lessons/lesson.05/)
 - [Урок 6. Знакомство с HTML, CSS, JS. Немного Bootstrap 5](lessons/lesson.06/)
 - [Урок 7. Знакомство с FastAPI](lessons/lesson.07/)
+- [Урок 8. Введение в Docker, docker-compose](lessons/lesson.08/)
