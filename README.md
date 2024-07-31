@@ -11,4 +11,5 @@
 - [Урок 7. Знакомство с FastAPI](lessons/lesson.07/)
 - [Урок 8. Введение в Docker, docker-compose](lessons/lesson.08/)
 - [Урок 9. Работа API с БД](lessons/lesson.09/)
+- [Урок 10. Связь контейнеров в docker. Сборка проекта на FastAPI](lessons/lesson.10/)
 
