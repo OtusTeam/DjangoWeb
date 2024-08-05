@@ -12,4 +12,4 @@
 - [Урок 8. Введение в Docker, docker-compose](lessons/lesson.08/)
 - [Урок 9. Работа API с БД](lessons/lesson.09/)
 - [Урок 10. Связь контейнеров в docker. Сборка проекта на FastAPI](lessons/lesson.10/)
-
+- [Урок 11. Django settings, админка, миграции, superuser](lessons/lesson.11/)
