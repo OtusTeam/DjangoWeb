@@ -1,0 +1,17 @@
+{% extends 'shop_app/index.html' %}
+
+{% block title %}
+  Products list
+{% endblock %}
+
+{% block body %}
+  <h1>Products</h1>
+  <ul>
+    {% for product in product_list %}
+      <li><a href="{% url 'shop_app:product' pk=product.pk %}"
+      >{{ product.title }}</a> - ₽{{ product.price }}</li>
+    {% endfor %}
+  </ul>
+
+  {% include 'shop_app/components/back-to-shop-index.html' %}
+{% endblock %}

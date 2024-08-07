@@ -13,3 +13,4 @@
 - [Урок 9. Работа API с БД](lessons/lesson.09/)
 - [Урок 10. Связь контейнеров в docker. Сборка проекта на FastAPI](lessons/lesson.10/)
 - [Урок 11. Django settings, админка, миграции, superuser](lessons/lesson.11/)
+- [Урок 12. Django CBV, шаблоны и наследование шаблонов](lessons/lesson.12/)

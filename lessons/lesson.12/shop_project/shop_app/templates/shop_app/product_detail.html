@@ -1,0 +1,30 @@
+{% extends 'shop_app/base.html' %}
+
+{% block title %}
+  Product '{{ product.title }}' details
+{% endblock %}
+
+{% block body %}
+  <h1>Product <b>{{ product.title }}</b> details</h1>
+  <div>
+    
+    <p><strong>Price:</strong> {{ product.price }}</p>
+    <p><strong>Description:</strong> {{ product.description }}</p>
+  </div>
+  
+  <div>
+  Categories:
+  <ul>
+    {% for category in product.categories.all %}
+    	<li><a href="{% url 'shop_app:category' pk=category.pk %}"
+      >{{ category.name }}</a></li>
+    {% endfor %}
+    
+  </ul>
+  </div>
+  
+  <div>
+    <a href="{% url 'shop_app:products' %}">Back to products list</a>
+  </div>
+
+{% endblock %}
