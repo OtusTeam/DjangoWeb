@@ -1,0 +1,24 @@
+{% extends 'shop_app/base.html' %}
+
+{% block title %}
+  Category {{ category.name }}
+{% endblock %}
+
+{% block body %}
+  <h1>Category {{ category.name }} details</h1>
+  <p>
+    <strong>Description:</strong>
+    {{ category.description }}
+  </p>
+  
+  <div>
+    <a href="{% url 'shop_app:category-edit' pk=category.pk %}"
+    >Edit category</a>
+  </div>
+  
+  <div>
+    <a href="{% url 'shop_app:category-confirm-delete' pk=category.pk %}"
+    >Delete category</a>
+  </div>
+  {% include 'shop_app/components/back-to-categories-list.html' %}
+{% endblock %}

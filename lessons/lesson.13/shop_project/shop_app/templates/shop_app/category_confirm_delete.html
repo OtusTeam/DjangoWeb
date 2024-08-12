@@ -1,0 +1,24 @@
+{% extends 'shop_app/base.html' %}
+
+{% block title %}
+  Delete Category
+{% endblock %}
+
+{% block body %}
+  <h1>Delete Category</h1>
+  
+  <p>
+    Are you sure you want to delete category <b>{{ category.name }}</b>?
+  </p>
+
+  <form method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Delete">
+  </form>
+  
+  <div>
+    <a href="{% url 'shop_app:category' pk=category.pk %}">Back to category details</a>
+  </div>
+
+{% endblock %}
