@@ -1,0 +1,20 @@
+{% extends 'shop_app/base.html' %}
+
+{% block title %}
+  Update Category
+{% endblock %}
+
+{% block body %}
+  <h1>Update Category {{ category.pk }}</h1>
+
+  <form method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Update">
+  </form>
+
+  <div>
+    <a href="{% url 'shop_app:category' pk=category.pk %}">Back to category details</a>
+  </div>
+
+{% endblock %}

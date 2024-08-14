@@ -15,3 +15,4 @@
 - [Урок 11. Django settings, админка, миграции, superuser](lessons/lesson.11/)
 - [Урок 12. Django CBV, шаблоны и наследование шаблонов](lessons/lesson.12/)
 - [Урок 13. Django forms. Наследование моделей. Абстрактные классы и proxy в django](lessons/lesson.13/)
+- [Урок 14. Django Debug Toolbar; Django ORM: m2m, select_related / prefetch_related](lessons/lesson.14/)
