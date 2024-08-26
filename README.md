@@ -18,4 +18,4 @@
 - [Урок 14. Django Debug Toolbar; Django ORM: m2m, select_related / prefetch_related](lessons/lesson.14/)
 - [Урок 15. Django ORM, оптимизация работы с БД](lessons/lesson.15/)
 - [Урок 16. Тестирование django приложений. Тестирование моделей. mixer для создания фейковых данных](lessons/lesson.16/)
-
+- [Урок 17. Азы работы с очередями задач](lessons/lesson.17/)
