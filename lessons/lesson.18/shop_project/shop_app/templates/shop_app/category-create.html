@@ -1,0 +1,17 @@
+{% extends 'shop_app/base.html' %}
+
+{% block title %}
+  Add Category
+{% endblock %}
+
+{% block body %}
+  <h1>Create Category</h1>
+
+  <form method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Add">
+  </form>
+  {% include 'shop_app/components/back-to-categories-list.html' %}
+
+{% endblock %}

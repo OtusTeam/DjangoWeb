@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Index Page
+{% endblock %}
+
+{% block body %}
+  <h1>Hello World</h1>
+  <p>
+    Current date and time: {% now "jS F Y H:i" %}
+
+  </p>
+  <p>Commented out text with</p>
+  
+  <h2>Apps:</h2>
+  <p>
+    <a href="{% url 'shop_app:index' %}">Shop Index</a>
+  </p>
+
+  {% filter force_escape|lower %}
+    & < >
+    This text will be HTML-escaped, and will appear in all lowercase.
+  {% endfilter %}
+{% endblock %}

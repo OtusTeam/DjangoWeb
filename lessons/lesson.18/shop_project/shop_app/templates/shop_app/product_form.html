@@ -1,0 +1,17 @@
+{% extends 'shop_app/base.html' %}
+
+{% block title %}
+  Add Product
+{% endblock %}
+
+{% block body %}
+  <h1>Create Product</h1>
+
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Create">
+  </form>
+  {% include 'shop_app/components/back-to-products-list.html' %}
+
+{% endblock %}
