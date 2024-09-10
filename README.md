@@ -20,3 +20,4 @@
 - [Урок 16. Тестирование django приложений. Тестирование моделей. mixer для создания фейковых данных](lessons/lesson.16/)
 - [Урок 17. Азы работы с очередями задач](lessons/lesson.17/)
 - [Урок 18. Введение в django-rest-framework: APIView, ModelViewSet; Serializers](lessons/lesson.18/)
+- [Урок 19. DRF: Serializers, Renderers, Routers](lessons/lesson.19/)
