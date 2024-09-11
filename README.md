@@ -21,3 +21,4 @@
 - [Урок 17. Азы работы с очередями задач](lessons/lesson.17/)
 - [Урок 18. Введение в django-rest-framework: APIView, ModelViewSet; Serializers](lessons/lesson.18/)
 - [Урок 19. DRF: Serializers, Renderers, Routers](lessons/lesson.19/)
+- [Урок 20. DRF. Views. Filtering. Pagination](lessons/lesson.20/)

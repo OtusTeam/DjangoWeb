@@ -1,0 +1,31 @@
+{% extends 'shop_app/index.html' %}
+
+{% block title %}
+  All Orders list
+{% endblock %}
+
+{% block body %}
+  <h1>Orders</h1>
+  {% for order in order_list %}
+    <div>
+      <p>Order #{{ order.pk }} from {{ order.created_at }}</p>
+      <p><strong>Ordered by:</strong> {{ order.user }}</p>
+      <ul>
+        {% for order_product in order.order_products.all %}
+          <li>{{ order_product.product.title }} - ₽{{ order_product.price }} × {{ order_product.quantity }}</li>
+          <ul>
+            {% for category in order_product.product.categories.all %}
+              <li>{{ category.name }}</li>
+            {% endfor %}
+          </ul>
+        {% endfor %}
+      </ul>
+    </div>
+    {% if not forloop.last %}
+      <hr>
+    {% endif %}
+  {% endfor %}
+
+  {% include 'shop_app/components/back-to-shop-index.html' %}
+
+{% endblock %}
