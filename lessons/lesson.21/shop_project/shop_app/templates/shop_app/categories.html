@@ -1,0 +1,29 @@
+{% extends 'shop_app/base.html' %}
+
+{% block title %}
+  Categories list
+{% endblock %}
+
+{% block body %}
+  <h1>Categories</h1>
+
+  <ul>
+    {% for category in categories %}
+      <li><a href="{% url 'shop_app:category' pk=category.pk %}"
+      >{{ category.name }}</a></li>
+    {% endfor %}
+  </ul>
+
+  {% if pi is not None %}
+    <div>
+      PI: {{ pi }}
+    </div>
+  {% endif %}
+
+  <div>
+    <a href="{% url 'shop_app:category-add' %}">Add a new category</a>
+  </div>
+  {% include 'shop_app/components/back-to-shop-index.html' %}
+  
+
+{% endblock %}
