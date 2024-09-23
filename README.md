@@ -24,3 +24,4 @@
 - [Урок 20. DRF. Views. Filtering. Pagination](lessons/lesson.20/)
 - [Урок 21. Django-rest-framework авторизация](lessons/lesson.21/)
 - [Урок 22. DRF. Система версий. Документация](lessons/lesson.22/)
+- [Урок 23. Тестирование django приложений. Тестирование views. Тестирование api](lessons/lesson.23/)
