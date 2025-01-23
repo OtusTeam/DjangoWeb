@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Blog Index Page
+{% endblock %}
+
+{% block body %}
+  <h1>Welcome!</h1>
+  <h2>Blog's index page.</h2>
+  
+  <h3>Applications:</h3>
+  <ul>
+    <li><a href="{% url 'blog:index' %}">Blog</a></li>
+  </ul>
+{% endblock %}
