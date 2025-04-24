@@ -1,0 +1,25 @@
+{% extends 'homepage/base.html' %}
+
+{% block title %}
+	Home
+{% endblock %}
+
+{% block body %}
+	{% if request.user.is_anonymous %}
+    <a href="{% url 'login' %}?next=/">Login</a>
+  {% else %}
+    <div>
+      Hello, {{ request.user.username }}
+    </div>
+    <div>
+      <a href="{% url 'homepage:dashboard' %}">Dashboard</a>
+    </div>
+    <br>
+    <div>
+      <form action="{% url 'logout' %}?next=/" method="post">
+        {% csrf_token %}
+        <button type="submit">Logout</button>
+      </form>
+    </div>
+	{% endif %}
+{% endblock %}

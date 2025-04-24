@@ -1,0 +1,49 @@
+{% extends 'homepage/base.html' %}
+
+{% block title %}
+	Dashboard
+{% endblock %}
+
+{% block body %}
+  {% include 'homepage/home.html' %}
+  <hr>
+  <h2>User info</h2>
+	<table>
+    <tr>
+      <td>User:</td>
+      <td>{{ profile.user.username }}</td>
+    </tr>
+    <tr>
+      <td>City:</td>
+      <td>{{ profile.city }}</td>
+    </tr>
+    <tr>
+      <td>Family Status:</td>
+      <td>{{ profile.get_family_status_display }}</td>
+    </tr>
+    <tr>
+      <td>Bio:</td>
+      <td>{{ profile.bio }}</td>
+    </tr>
+  </table>
+
+  <hr/>
+  <h2>Currency rates</h2>
+  <table>
+    <tr>
+      <th>Currency</th>
+      <th>Rate</th>
+    </tr>
+    {% for currency, rate in currencies.items %}
+      <tr>
+        <td><code>{{ currency|upper }}</code></td>
+        <td>{{ rate }}</td>
+      </tr>
+    {% endfor %}
+  </table>
+  <hr>
+  <h2>New joke:</h2>
+  <blockquote>
+    {{ joke|linebreaksbr }}
+  </blockquote>
+{% endblock %}
