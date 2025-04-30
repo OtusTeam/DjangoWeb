@@ -11,3 +11,4 @@
 ### Курсы Django Web:
 
 - [DjangoWeb.2024-06](https://github.com/OtusTeam/DjangoWeb/tree/DjangoWeb.2024-06)
+- [DjangoWeb.2025-04](https://github.com/OtusTeam/DjangoWeb/tree/DjangoWeb.2025-04)
