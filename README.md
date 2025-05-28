@@ -9,3 +9,4 @@
 - [Урок 5. ORM, SQLAlchemy](lessons/lesson.05/)
 - [Урок 6. HTML, CSS, Bootstrap](lessons/lesson.06/)
 - [Урок 7. Знакомство с FastAPI](lessons/lesson.07/)
+- [Урок 8. Введение в Docker](lessons/lesson.08/)
