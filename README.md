@@ -10,3 +10,4 @@
 - [Урок 6. HTML, CSS, Bootstrap](lessons/lesson.06/)
 - [Урок 7. Знакомство с FastAPI](lessons/lesson.07/)
 - [Урок 8. Введение в Docker](lessons/lesson.08/)
+- [Урок 9. Работа API с БД](lessons/lesson.09/)
