@@ -1,0 +1,41 @@
+/*ul >li {*/
+/*    color: yellow;*/
+/*    font-size: 70px;*/
+/*}*/
+
+body {
+    /* background-color: rgb(255, 170, 20); */
+    background-color:#98FB98;
+    color: #222;
+
+}
+
+
+h1, h2, h3 {
+    background-color: cornflowerblue;
+    margin: 30px 40px 50px 60px;
+    padding: 40px;
+    text-align: center;
+}
+
+h1 {
+    color: blue;
+}
+
+h2 {
+    color: red;
+}
+
+a {
+    text-decoration: none;
+    color: brown;
+}
+
+a:hover {
+    background-color: blue;
+    text-decoration: underline;
+}
+
+.new_style {
+    font-size: 100px;
+}

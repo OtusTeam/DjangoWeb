@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='css/style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--    <link rel="stylesheet" href="css/style.css">-->
+    <!--    <link rel="stylesheet" href="css/style.css">-->
+
+    <!--    <style>-->
+    <!--        h2 {-->
+    <!--            color: red;-->
+    <!--            font-size: 50px;-->
+    <!--        }-->
+    <!--    </style>-->
+
+</head>
+<body>
+<header>
+
+
+    <!--    <div class="site-logo new_style">-->
+    <!--        <a href="index.html">Фильмотека</a>-->
+    <!--    </div>-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">{{ title }} Фильмотека</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <nav>
+        <ul class="main-menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="genres.html">Жанры</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <p class="btn btn-primary">Наши фильмы</p>
+    <h1> Список фильмов </h1>
+    <!--            <h2>  Список фильмов </h2>-->
+    <!--            <h3>  Список фильмов </h3>-->
+    <!--            <h4>  Список фильмов </h4>-->
+    <!--            <h5>  Список фильмов </h5>-->
+    <!--            <h6>  Список фильмов </h6>-->
+
+    <section>
+        <!--        <h2 style="color: blue">Фильмы из нашей библиотеки</h2>-->
+        <h2>Фильмы из нашей библиотеки</h2>
+
+        <!--        <article>-->
+        <!--            <h3>Matrix</h3>-->
+        <!--            <p>1999</p>-->
+        <!--            <a href="movie_matrix.html">Подробней</a>-->
+        <!--        </article>-->
+
+        <!--        <article>-->
+        <!--            <h3 class="new_style">Matrix2</h3>-->
+        <!--            <p>2002</p>-->
+        <!--            <a href="#">Подробней</a>-->
+        <!--        </article>-->
+
+        {% for movie in movies %}
+
+        <article class="card" style="width: 18rem;">
+            <img src="{{ url_for('static', path='images/tanos.jpeg') }}" class="card-img-top" alt="Tanos">
+            <div class="card-body">
+                <h5 class="card-title">{{ movie.title }}</h5>
+                <p class="card-text">{{ movie.year }}</p>
+                <p class="card-text">{{ movie.description }}</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </article>
+        {% endfor %}
+    </section>
+
+    <button type="button" class="btn btn-primary">Primary</button>
+</main>
+
+<footer>
+
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
+
