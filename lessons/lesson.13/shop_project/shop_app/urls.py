@@ -8,6 +8,10 @@ from shop_app.views import (
     ProductListView,
     ProductListTemplateView,
     ProductDetailView,
+    CreateCategoryView,
+    CategoryListView,
+    ProductCreateView,
+    ProductDeleteView,
 )
 
 app_name = "shop_app"
@@ -23,4 +27,8 @@ urlpatterns = [
     # path('products/', ProductListView.as_view(), name='products'),
     path("products/", ProductListTemplateView.as_view(), name="products"),
     path("products/<int:pk>/", ProductDetailView.as_view(), name="product"),
+    path("create/", CreateCategoryView.as_view(), name="create"),
+    path("categories/", CategoryListView.as_view(), name="categories"),
+    path('products/create/', ProductCreateView.as_view(), name='create_product'),
+    path('products/<int:pk>/delete/', ProductDeleteView.as_view(), name='delete_product'),
 ]

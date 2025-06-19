@@ -32,5 +32,6 @@ class Category(models.Model):
         null=False, blank=True, verbose_name="Описание категории"
     )
 
+
     def __str__(self):
         return self.title
