@@ -12,3 +12,4 @@
 - [Урок 8. Введение в Docker](lessons/lesson.08/)
 - [Урок 9. Работа API с БД](lessons/lesson.09/)
 - [Урок 10. Docker Compose](lessons/lesson.10/)
+- [Урок 18. Введение в django-rest-framework](lessons/lesson.18/)
