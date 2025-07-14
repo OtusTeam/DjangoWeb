@@ -13,3 +13,4 @@
 - [Урок 9. Работа API с БД](lessons/lesson.09/)
 - [Урок 10. Docker Compose](lessons/lesson.10/)
 - [Урок 18. Введение в django-rest-framework](lessons/lesson.18/)
+- [Урок 19. DRF. Serializers. Renderers. Routers](lessons/lesson.19/)
