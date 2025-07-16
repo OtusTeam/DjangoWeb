@@ -1,0 +1,11 @@
+Django
+psycopg2-binary
+django-debug-toolbar
+coverage
+Faker
+mixer
+django-rq
+djangorestframework
+markdown
+django-filter
+requests
