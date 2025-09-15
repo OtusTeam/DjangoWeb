@@ -19,3 +19,4 @@
 - [Урок 22. DRF. Система версий. Документация](lessons/lesson.22/)
 - [Урок 23. Тестирование django приложений. Тестирование views. Тестирование api](lessons/lesson.23/)
 - [Урок 34. Варианты авторизации. JWT, cookies, 3rd party integration](lessons/lesson.34/)
+- [Урок 35. Сборка проекта с docker для разработки и production](lessons/lesson.35/)
