@@ -20,3 +20,4 @@
 - [Урок 23. Тестирование django приложений. Тестирование views. Тестирование api](lessons/lesson.23/)
 - [Урок 34. Варианты авторизации. JWT, cookies, 3rd party integration](lessons/lesson.34/)
 - [Урок 35. Сборка проекта с docker для разработки и production](lessons/lesson.35/)
+- [Урок 36. Контектсные процессоры и middleware в django. Подведение итогов](lessons/lesson.35/)
