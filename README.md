@@ -6,6 +6,7 @@
 - [Первый шаг в Django: создайте свой первый веб-проект. Занятие от 23.01.2025](open-lessons/django-intro-23.01.2025/)
 - [Знакомство с Django REST Framework: создание API на Django. Занятие от 17.04.2025](open-lessons/django-and-drf-17.04/)
 - [Асинхронное Django приложение: работа с асинхронными ORM и views. Занятие от 23.04.2025](open-lessons/django-asyncio-23.04/)
+- [Знакомство с Vue.js: основы для начинающих. Занятие от 18.02.2026](open-lessons/vue-intro-18.02/)
 
 
 ### Курсы Django Web:
